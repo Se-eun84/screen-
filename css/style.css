@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav {
+    background: rgb(16, 36, 78);
+    height: 80px;
+}
+
+strong {
+    font-size: 20px;
+}
+
+.home {
+    height: 100%;
+    color: rgb(0, 66, 153);
+}
+
+.back {
+    background: linear-gradient(rgba(65, 64, 64, 0.8),rgba(65, 64, 64, 0.8)),url(../image/backimage2.jpg);
+    background-size: cover;
+    height: 800px;
+}
+
+.issue {
+    height: 950px;
+    color: #fff;
+    background:rgb(20, 21, 77);
+}
+
+.feedback {
+    background: linear-gradient(rgba(214, 214, 214, 0.8),rgba(214, 214, 214, 0.8)),url(../image/backimage2.jpg);
+    background-size: cover;
+    height: 1050px;
+    overflow: hidden;
+}
+
+.about {
+    height: 100%;
+    width: 100%;
+}
+
+
+.logo {
+    display: flex;
+    position: absolute;
+    width: 80px;
+    height: 70px;
+    margin-top: 5px;
+}
+
+.menu {
+    display: flex;
+    margin-left: 70%;
+    padding: 15px;
+    
+}
+
+li {
+    margin-left: 30px;
+    list-style: none;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.menu>li :hover {
+    color: rgb(153, 153, 153);
+}
+
+
+/**********home*********************/
+
+.wrap{
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(241, 241, 241);
+    text-align: center;
+}
+
+.s-text{
+    font-size: 125px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+#dynamic{
+    position: relative;
+    display: inline-block;
+}
+
+#dynamic::after{
+    content:"";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 4px;
+    height: 100%;
+    background-color: rgba(242, 242, 243, 0.733);
+}
+
+#dynamic.active::after{
+    display: none;
+}
+
+.spacetext {
+    color: rgba(190, 192, 194, 0.63);
+    display: block;
+    text-align: center;
+    margin-top: 370px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 40px;
+}
+
+.menu {
+    color: #333;
+    display: flex;
+}
+
+/***************feedback*******************/
+
+.feedbacktitle {
+    font-size: 100px;
+    color: rgb(0, 35, 80);
+    text-align: center;
+    margin-top: 100px;
+}
+.opnion {
+    width: 50%;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.315);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input[type="text"] {
+    background: rgba(255, 255, 255, 0);
+    color: #333;
+    
+}
+
+
+input[type="text"] {
+    width: 40%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-style: none;
+    border-bottom: 1.5px solid rgba(5, 5, 5, 0.39);
+    font-size: 20px;
+}
+
+input[type="email"] {
+    background: rgba(255, 255, 255, 0);
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
+    display: block;
+    outline: none;
+    border: none;
+    border-bottom: 1.5px solid rgba(5, 5, 5, 0.39);
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.158);
+}
+
+
+label {
+    font-size: 25px;
+    color: rgb(12, 46, 90);
+    margin-top: 20px;
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+::placeholder {
+    color: rgba(51, 51, 51, 0.719);
+}
+
+/*****************issue*************************/
+
+.issuecontent {
+    display: flex;
+    /*margin-left: 100px;*/
+    margin-left: 50px;
+}
+
+.issuetitle {
+    position: relative;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 100px;
+    color: rgb(255, 255, 255);
+}
+
+.issuetitle2 {
+    position: relative;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 100px;
+    padding-top: 100px;
+    color: rgb(255, 255, 255);
+}
+
+.issue1 {
+    position: absolute;
+    /*margin-left: 170px;*/
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.issue2,.issue3 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.issue2 {
+    
+    /*margin-left: 730px;*/
+    margin-left: 600px;
+}
+.issue3 {
+    position: absolute;
+    /*margin-top: 340px;
+    margin-left: 730px;*/
+
+    margin-left: 965px;
+}
+
+.issue4 {
+    display: block;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 300px;
+    object-fit: cover;
+}
+
+.issue1:hover, 
+.issue2:hover, 
+.issue3:hover,
+.issue4:hover {
+    border: 1px solid rgb(146, 146, 146);
+
+}
+
+/*************about*****************/
+.abouttitle {
+    position: relative;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 100px;
+    color: rgb(0, 66, 153);
+}
+
+.visiontitle {
+    font-size: 30px;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 22%;
+    border-bottom: 3px solid rgb(7, 40, 112);
+    
+}
+
+
+.vision {
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    background: url(../image/issue7.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    padding: 83px 0 0 0;
+    text-align: center;
+    color: #fff;
+}
+
+.vision>strong {
+    display: inline-block;
+    color: #fff;
+    font-size: 2.429em;
+    font-weight: normal;
+    border-bottom: 1px solid #68798a;
+    padding: 0 20px 20px 20px;
+    margin: 0 0 30px 0;
+}
+
+.visionlist {
+    display: flex;
+    margin-top: 50px;
+    color: #fff;
+    padding: 10px;
+    justify-content: center;
+}
+
+.list1,
+.list2,
+.list3 {
+    font-size: 15px;
+    padding: 25px;
+    padding-top: 30px;
+}
+
+.list1 {
+    background: rgba(150, 128, 6, 0.596);
+    border-radius: 62px;
+    width: 280px;
+    height: 150px;
+    text-align: center;
+}
+
+.list2 {
+    background: rgba(29, 77, 150, 0.459);
+    border-radius: 62px;
+    width: 280px;
+    height: 150px;
+    text-align: center;
+}
+
+.list3 {
+    background: rgba(28, 119, 73, 0.541);
+    border-radius: 62px;
+    width: 280px;
+    height: 150px;
+    text-align: center;
+}
+
+
+.menu_bth {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 100px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(6, 61, 133, 0.712);
+    border: 1px;
+    z-index: 1;
+    color: white;
+    font-size: 10px;
+}
+
+.menulist>li {
+    display: block;
+    width: 80px;
+    height: 40px;
+    margin: 0%;
+    text-align: center;
+    padding: 2px;
+}
+
+.listhome {
+    background: rgba(3, 44, 97, 0.712);
+}
+.listabout {
+    background: rgba(24, 59, 105, 0.712);
+}
+.listnews {
+    background: rgba(42, 70, 105, 0.712);
+}
+.listfeedback {
+    background: rgba(58, 81, 112, 0.712)
+}
+
+.listhome:hover,
+.listabout:hover,
+.listfeedback:hover,
+.listnews:hover {
+    border: 2px solid rgba(1, 1, 24, 0.37);
+}
+
+footer {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(85, 84, 84);
+    color:  #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+.aboutfooter {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(85, 84, 84);
+    color:  #fff;
+    text-align: center;
+    padding: 50px;
+    margin-top: 5%;
+}
+
+.feedfooter {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(85, 84, 84);
+    color:  #fff;
+    text-align: center;
+    padding: 50px;
+    margin-top: 111px;
+}
